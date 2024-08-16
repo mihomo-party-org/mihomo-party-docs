@@ -3,12 +3,12 @@ title: Mihomo Party
 description: Another Mihomo GUI
 template: splash
 hero:
-  tagline: Another Mihomo GUI
+  title: Mihomo Party <br/> 一个更易用的客户端
   image:
     file: ../../assets/icon.png
   actions:
     - text: 使用指南
-      link: /guides/install/
+      link: /guides/install/windows
       icon: right-arrow
       variant: primary
     - text: GitHub
@@ -21,16 +21,10 @@ import { Card, CardGrid } from "@astrojs/starlight/components";
 ## 功能特性
 
 <CardGrid stagger>
-  <Card title="Update content" icon="pencil">
-    Edit `src/content/docs/index.mdx` to see this page change.
+  <Card title="常用配置项" icon="setting">
+    你可以在客户端中直接配置 dns/sniff 等常用配置项，无需修改配置文件
   </Card>
-  <Card title="Add new content" icon="add-document">
-    Add Markdown or MDX files to `src/content/docs` to create new pages.
-  </Card>
-  <Card title="Configure your site" icon="setting">
-    Edit your `sidebar` and other config in `astro.config.mjs`.
-  </Card>
-  <Card title="Read the docs" icon="open-book">
-    Learn more in [the Starlight Docs](https://starlight.astro.build/).
+  <Card title="内置编辑器" icon="pencil">
+    软件内置 monaco-editor，能让用户更好的编辑/格式化配置文件
   </Card>
 </CardGrid>

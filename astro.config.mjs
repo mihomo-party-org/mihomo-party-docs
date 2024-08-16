@@ -14,7 +14,25 @@ export default defineConfig({
 				{
 					label: '使用指南',
 					items: [
-						{ label: '下载安装', slug: 'guides/install' },
+						{
+							label: '下载安装', items: [
+								'guides/install/windows',
+								'guides/install/macos',
+								{
+									label: 'Linux', items: [
+										'guides/install/linux-debian',
+										'guides/install/linux-redhat',
+										'guides/install/linux-arch',
+										'guides/install/linux-other'
+									]
+								},
+							]
+						},
+						
+						{ label: '常见问题', items: [
+							'guides/issue/windows',
+							'guides/issue/macos',
+						] },
 					],
 				}
 			],
