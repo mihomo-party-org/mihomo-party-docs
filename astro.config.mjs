@@ -32,6 +32,7 @@ export default defineConfig({
 						{ label: '常见问题', items: [
 							'guides/issue/windows',
 							'guides/issue/macos',
+							'guides/issue/linux'
 						] },
 					],
 				}
