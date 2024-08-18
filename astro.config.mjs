@@ -7,6 +7,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Mihomo Party',
+			favicon: '/favicon.ico',
 			social: {
 				github: 'https://github.com/pompurin404/mihomo-party',
 			},
