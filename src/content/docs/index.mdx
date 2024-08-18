@@ -21,10 +21,19 @@ import { Card, CardGrid } from "@astrojs/starlight/components";
 ## 功能特性
 
 <CardGrid stagger>
+  <Card title="开箱即用" icon="star">
+    软件已经处理好权限问题，Tun开箱即用，无需服务模式
+  </Card>
   <Card title="常用配置项" icon="setting">
     你可以在客户端中直接配置 dns/sniff 等常用配置项，无需修改配置文件
   </Card>
   <Card title="内置编辑器" icon="pencil">
     软件内置 monaco-editor，能让用户更好的编辑/格式化配置文件
+  </Card>
+  <Card title="一键备份" icon="seti:code-climate">
+    软件支持通过WebDav一键备份/恢复配置
+  </Card>
+  <Card title="订阅覆写" icon="seti:code-climate">
+    软件提供强大的配置覆写功能，你可以任意修订你的订阅配置
   </Card>
 </CardGrid>
