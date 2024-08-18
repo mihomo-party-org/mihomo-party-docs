@@ -25,16 +25,27 @@ export default defineConfig({
 										'guides/install/linux-arch',
 										'guides/install/linux-other'
 									]
-								},
+								}
 							]
 						},
-						
-						{ label: '常见问题', items: [
-							'guides/issue/general',
-							'guides/issue/windows',
-							'guides/issue/macos',
-							'guides/issue/linux'
-						] },
+						{
+							label: '常见问题', items: [
+								'guides/issue/general',
+								'guides/issue/windows',
+								'guides/issue/macos',
+								'guides/issue/linux'
+							]
+						},
+						{
+							label: '使用教程', items: [
+								{
+									label: '覆写', items: [
+										'guides/function/override/yaml',
+										'guides/function/override/js',
+									]
+								}
+							]
+						},
 					],
 				}
 			],

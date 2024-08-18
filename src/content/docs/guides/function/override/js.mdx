@@ -1,0 +1,16 @@
+---
+title: JavaScript
+---
+
+使用 `JavaScript` 对配置进行修改
+
+程序的入口为 `main` 函数，接受一个 `config` 参数 (名称不限制)，并返回修改后的该参数
+
+下方演示为在 `rules` 开头插入一条规则
+
+```js
+function main(config) {
+  config.rules.unshift("DOMAIN,google.com,DIRECT");
+  return config;
+}
+```
