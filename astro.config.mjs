@@ -41,6 +41,7 @@ export default defineConfig({
 							label: '使用教程', items: [
 								{
 									label: '覆写', items: [
+										'guides/function/override/overview',
 										'guides/function/override/yaml',
 										'guides/function/override/js',
 									]
