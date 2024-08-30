@@ -6,12 +6,31 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 使用 `深度合并` 对原配置进行覆写，优先级低于应用常用配置覆写
 
-如果目标是是简单值或者数组，将直接覆盖
+如果目标是是简单值，将直接覆盖
 
-如果遇到嵌套的对象，函数会进一步递归合并这些嵌套的对象
+如果遇到嵌套的对象，函数会进一步递归合并这些嵌套的对象, 可以使用 `!` 修饰以强制覆盖整个对象而不是递归合并
 
-如果是[rules](https://wiki.metacubex.one/config/rules/)/[proxies](https://wiki.metacubex.one/config/proxies/),则在数组开头进行填充
+如：
+```yaml
+# 直接覆盖配置中的dns字段为以下内容而不进行合并
+dns!:
+  enable: false
+```
 
+对于数组类型，可以使用 `+` 修饰进行前置/追加操作
+
+如：
+```yaml
+# 直接覆盖整个规则
+rules:
+  - DOMAIN,baidu.com,DIRECT
+# 将规则插入到原规则前面
++rules:
+  - DOMAIN,baidu.com,DIRECT
+# 在原规则后面追加规则
+rules+:
+  - DOMAIN,baidu.com,DIRECT
+```
 
 <Tabs>
 <TabItem label="覆写前内容">
