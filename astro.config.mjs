@@ -39,6 +39,7 @@ export default defineConfig({
 						},
 						{
 							label: '使用教程', items: [
+								'guides/function/icon',
 								{
 									label: '覆写', items: [
 										'guides/function/override/overview',
