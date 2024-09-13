@@ -9,7 +9,7 @@ export default defineConfig({
 			title: 'Mihomo Party',
 			favicon: '/favicon.ico',
 			social: {
-				github: 'https://github.com/pompurin404/mihomo-party',
+				github: 'https://github.com/mihomo-party-org/mihomo-party',
 			},
 			sidebar: [
 				{
