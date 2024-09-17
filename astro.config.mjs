@@ -49,6 +49,12 @@ export default defineConfig({
 								}
 							]
 						},
+						{
+							label: 'URL Scheme', items: [
+								'guides/specification/url-scheme/profile',
+							]
+
+						}
 					],
 				}
 			],
