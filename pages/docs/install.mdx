@@ -1,0 +1,124 @@
+---
+title: 安装指南
+---
+
+import { Tabs, Callout } from "nextra/components";
+
+<Tabs items={["Windows", "macOS", "Linux"]}>
+<Tabs.Tab>
+<Tabs items={["手动安装", "WinGet"]}>
+<Tabs.Tab>
+
+Mihomo Party 提供安装版和便携版两种安装方式
+
+安装版下载 exe 安装包，双击安装即可
+
+便携版下载 7z 压缩包，自行解压即可
+
+</Tabs.Tab>
+<Tabs.Tab>
+<Callout type="info">
+由于WinGet仓库需要审核，所以更新会有一两天的延迟，版本滞后是正常现象
+</Callout>
+Mihomo Party 还可以通过 WinGet 安装
+
+```shell
+winget install mihomo-party
+```
+
+</Tabs.Tab>
+</Tabs>
+</Tabs.Tab>
+
+<Tabs.Tab>
+<Callout type="info">
+由于应用没有签名，所以 macOS 可能会显示开发者无法验证或应用已损坏
+
+点击 `取消` 按钮，然后去 `设置 -> 隐私与安全性` 页面，点击 `仍要打开` 按钮，然后在弹出窗口里点击 `打开` 按钮即可
+
+如果在 `隐私与安全性` 中找不到以上选项，或启动时提示文件损坏。打开 `Terminal.app`，并输入以下命令，然后重启应用即可：
+
+```bash
+sudo xattr -r -d com.apple.quarantine /Applications/mihomo-party.app
+```
+
+</Callout>
+<Tabs items={["手动安装", "Homebrew"]}>
+<Tabs.Tab>
+
+下载 dmg 包，双击打开后将 Mihomo Party 拖入 Applications 中即可
+
+</Tabs.Tab>
+<Tabs.Tab>
+
+Mihomo Party 还可以通过 Homebrew 安装
+
+### 添加 Mihomo Party 的 Tap
+
+```bash
+brew tap mihomo-party-org/mihomo-party
+```
+
+### 安装
+
+```bash
+brew install --cask mihomo-party
+```
+
+### 升级
+
+```bash
+brew upgrade --cask mihomo-party
+```
+
+</Tabs.Tab>
+</Tabs>
+</Tabs.Tab>
+
+<Tabs.Tab>
+<Tabs items={["Debian系", "RedHat系", "Arch系", "其他"]}>
+<Tabs.Tab>
+下载 deb 包，使用 apt 安装
+
+```bash
+sudo apt install -y /path/to/mihomo-party-linux-xxx.deb
+```
+
+</Tabs.Tab>
+<Tabs.Tab>
+下载 rpm 包，使用 rpm/dnf/yum 安装
+
+```bash
+# rpm
+sudo rpm -ih /path/to/mihomo-party-linux-xxx.rpm
+# dnf
+sudo dnf install /path/to/mihomo-party-linux-xxx.rpm
+# yum
+sudo yum localinstall /path/to/mihomo-party-linux-xxx.rpm
+```
+
+</Tabs.Tab>
+<Tabs.Tab>
+通过 [AUR](https://aur.archlinux.org/packages?O=0&K=mihomo-party) 安装
+
+```bash
+# 源码包
+paru/yay -S mihomo-party
+# 二进制包
+paru/yay -S mihomo-party-bin
+# Git 版本源码包
+paru/yay -S mihomo-party-git
+# 使用系统electron的源码包
+paru/yay -S mihomo-party-electron
+# 使用系统electron的二进制包
+paru/yay -S mihomo-party-electron-bin
+```
+
+</Tabs.Tab>
+<Tabs.Tab>
+可拆包deb/rpm，自行打包为需要的其他包管理器格式
+</Tabs.Tab>
+</Tabs>
+</Tabs.Tab>
+
+</Tabs>

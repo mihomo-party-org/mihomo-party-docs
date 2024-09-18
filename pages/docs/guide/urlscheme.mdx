@@ -1,0 +1,45 @@
+---
+title: URL Scheme
+---
+
+使用 URL Scheme 快速导入配置文件，参数 `url` 为必须项
+
+```
+mihomo://install-config?url=<URI编码后url>&name=<名称>
+```
+
+## 响应头
+
+存在以下响应头时，会自动设置配置的信息
+
+#### content-disposition
+
+设置配置名称，使用 `filename` 参数，优先级低于 URL Scheme 的 `name` 参数
+
+```
+content-disposition: attachment; filename*=UTF-8''%E5%90%8D%E7%A7%B0
+```
+
+#### profile-update-interval
+
+设置配置更新时长，单位为小时
+
+```
+profile-update-interval: 24
+```
+
+#### profile-web-page-url
+
+设置配置菜单的主页
+
+```
+profile-web-page-url: https://mihomo.party
+```
+
+#### subscription-userinfo
+
+显示流量信息至配置卡片
+
+```
+subscription-userinfo: upload=1638257504; download=13418441583; total=1073839341568; expire=1791390742
+```

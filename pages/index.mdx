@@ -1,0 +1,65 @@
+---
+title: 主页
+---
+
+import React from "react";
+import Logo from "../components/logo";
+import { Cards, Card } from "nextra/components";
+
+<IndexPage />
+
+export function IndexPage() {
+  return (
+    <>
+      <div
+        className="h-[calc(100vh-278px)] flex flex-row-reverse justify-around flex-wrap items-center gap-8"
+      >
+        <img
+          src="/logo.png"
+          style={{
+            height: "200px",
+            filter: "drop-shadow(0 0 4rem #3C82C1)",
+          }}
+        />
+        <div>
+          <div className="flex justify-start">
+            <Logo className='h-[64px]' />
+          </div>
+          <h2 className="text-[48px]">一个更易用的客户端</h2>
+          <div className="flex justify-start gap-4 mt-4">
+            <a href="/download">
+              <button
+                className="text-white bg-[#008AE6] text-lg py-2 px-4 rounded-[24px]"
+              >
+                立即下载
+              </button>
+            </a>
+            <a href="/docs/install">
+              <button
+                style={{
+                  backgroundColor: "transparent",
+                  fontSize: "18px",
+                  padding: "8px 16px",
+                  borderRadius: "24px",
+                }}
+              >
+                使用指南
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div style={{ padding: '12px 48px' }}>
+        <Cards>
+          <Card title="开箱即用，无需服务模式的 Tun" href="#" />
+          <Card title="多种配色主题可选，UI 焕然一新" href="#" />
+          <Card title="支持大部分 Mihomo 常用配置修改" href="#" />
+          <Card title="通过 WebDav 一键备份和恢复配置" href="#" />
+          <Card title="强大的覆写功能，任意修订配置文件" href="#" />
+          <Card title="深度集成 Sub-Store，轻松管理订阅" href="#" />
+        </Cards>
+      </div></>
+
+);
+}

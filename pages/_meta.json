@@ -1,0 +1,20 @@
+{
+  "index": {
+    "title": "主页",
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "download": {
+    "title": "下载",
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "docs": {
+    "title": "使用指南",
+    "type": "page"
+  }
+}
