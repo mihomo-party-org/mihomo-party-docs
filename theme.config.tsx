@@ -8,7 +8,8 @@ const config: DocsThemeConfig = {
     titleTemplate: "%s - Mihomo Party - 一个更易用的客户端",
   }),
   logo: <Logo style={{ height: "24px" }} />,
-  docsRepositoryBase: "https://github.com/mihomo-party-org/mihomo-party-docs",
+  docsRepositoryBase:
+    "https://github.com/mihomo-party-org/mihomo-party-docs/edit/master",
   project: {
     link: "https://github.com/mihomo-party-org/mihomo-party",
   },
