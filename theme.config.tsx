@@ -35,7 +35,7 @@ const config: DocsThemeConfig = {
   darkMode: true,
   chat: {
     icon: <FaTelegramPlane style={{ fontSize: 24 }} />,
-    link: "https://t.me/mihomo_party",
+    link: "https://t.me/mihomo_party_group",
   },
   footer: {
     text: "GPL-3.0 © mihomo-party.",
