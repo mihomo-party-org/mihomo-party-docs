@@ -37,6 +37,23 @@ rules+:
   - DOMAIN,baidu.com,DIRECT
 ```
 
+若原本的键名就以 `+` 开头或结尾，为避免歧义请以 `<>` 包裹键名
+
+如：
+
+```yaml
+nameserver-policy:
+  # 直接覆盖原先的+.google.cn项
+  <+.google.cn>:
+    - 8.8.8.8
+  # 插入到前面
+  +<+.google.cn>:
+    - 8.8.8.8
+  # 追加到后面
+  <+.google.cn>+:
+    - 8.8.8.8
+```
+
 ## 覆写运行示例
 
 <Tabs items={["覆写前内容", "要覆写的内容", "输出内容"]}>
