@@ -42,16 +42,17 @@ rules+:
 如：
 
 ```yaml
-nameserver-policy:
-  # 直接覆盖原先的+.google.cn项
-  <+.google.cn>:
-    - 8.8.8.8
-  # 插入到前面
-  +<+.google.cn>:
-    - 8.8.8.8
-  # 追加到后面
-  <+.google.cn>+:
-    - 8.8.8.8
+dns:
+  nameserver-policy:
+    # 直接覆盖原先的+.google.cn项
+    <+.google.cn>:
+      - 8.8.8.8
+    # 插入到前面
+    +<+.google.cn>:
+      - 8.8.8.8
+    # 追加到后面
+    <+.google.cn>+:
+      - 8.8.8.8
 ```
 
 ## 覆写运行示例
