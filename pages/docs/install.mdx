@@ -31,8 +31,14 @@ winget install mihomo-party
 </Tabs.Tab>
 
 <Tabs.Tab>
+
+<Tabs items={["手动安装", "Homebrew"]}>
+<Tabs.Tab>
+
+下载 dmg 包，双击打开后将 Mihomo Party 拖入 Applications 中即可
+
 <Callout type="info">
-由于应用没有签名，所以 macOS 可能会显示开发者无法验证或应用已损坏
+1.5.14之前版本，应用没有签名，所以 macOS 可能会显示开发者无法验证或应用已损坏
 
 点击 `取消` 按钮，然后去 `设置 -> 隐私与安全性` 页面，点击 `仍要打开` 按钮，然后在弹出窗口里点击 `打开` 按钮即可
 
@@ -41,12 +47,7 @@ winget install mihomo-party
 ```bash
 sudo xattr -r -d com.apple.quarantine /Applications/Mihomo\ Party.app
 ```
-
 </Callout>
-<Tabs items={["手动安装", "Homebrew"]}>
-<Tabs.Tab>
-
-下载 dmg 包，双击打开后将 Mihomo Party 拖入 Applications 中即可
 
 </Tabs.Tab>
 <Tabs.Tab>
